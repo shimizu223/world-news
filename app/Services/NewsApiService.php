@@ -21,8 +21,8 @@ class NewsApiService
 	{
 		$params = [
 			'country'  => $country,
+			'category' => $category,
 			'apiKey'   => $this->apiKey,
-			'category' => $category
 		];
 
 		$response = $this->client->get('top-headlines', [
